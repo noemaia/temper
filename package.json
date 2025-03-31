@@ -1,0 +1,26 @@
+{
+	"name": "package-name",
+	"type": "module",
+	"version": "0.0.0",
+	"sideEffects": false,
+	"exports": "./dist/index.js",
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"dev": "pnpm run build --watch",
+		"test": "vitest",
+		"format": "prettier -c .",
+		"typecheck": "tsc --noEmit"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.13.13",
+		"prettier": "^3.4.2",
+		"typescript": "^5.8.2",
+		"vitest": "^3.0.5"
+	},
+	"packageManager": "pnpm@10.7.0"
+}
